@@ -1,3 +1,8 @@
-let arr = Array(5).fill([]);
-arr[0].push(1);
-console.log(arr);
+let obj = {};
+Object.defineProperty(
+  obj,
+  'foo',
+  { value: 'bar', enumerable: false }
+);
+console.log(obj)
+console.log('foo' in obj);
